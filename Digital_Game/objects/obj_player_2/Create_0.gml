@@ -14,3 +14,6 @@ dash=1;
 doublejump=false;
 
 stance = 0;
+
+//Jacob's addition to player
+PlayerHealth = 100;
