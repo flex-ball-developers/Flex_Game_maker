@@ -67,13 +67,26 @@ if state == "MOVE"
 		dash-=1;
 	
 	}
-	if keyboard_check_pressed(ord("X")) and stance == 1
+	if keyboard_check_pressed(vk_space) and stance == 1
 	{
 		image_index=0
 		state = "ATTACK";
 		shoot=instance_create_layer(x,y-32,"Instances",obj_shoot)
-		shoot.speed=20*image_xscale;
-		shoot.image_xscale=image_xscale;
+		if(keyboard_check(vk_up))
+		{
+			shoot.direction = 90;
+			shoot.speed=20*image_yscale;
+			shoot.image_angle = 90;
+			
+		}
+		else
+		{
+			shoot.direction = 0;
+			shoot.speed=20*image_xscale;
+			shoot.image_angle = 0;
+			shoot.image_xscale=image_xscale;
+		}
+		
 	}
 	
 	if keyboard_check_pressed(ord("Z")) and stance == 1

@@ -12,7 +12,7 @@ if(state == "IDLE")
 
 
 
-	if distance_to_object(obj_player_2) < 20
+	if distance_to_object(obj_player_2) < 5
 		{
 			//Bomber is colliding with enemy
 			//Bomber should explode
