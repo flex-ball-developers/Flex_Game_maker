@@ -15,5 +15,4 @@ doublejump=false;
 
 stance = 0;
 
-//Jacob's addition to player
 PlayerLives = 3;

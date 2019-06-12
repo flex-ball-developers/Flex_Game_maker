@@ -9,12 +9,9 @@
         "a0f42e21-4ec1-4f74-99d6-748a67b1b4ff",
         "f2d85324-6a3f-43af-985c-123b4363d240",
         "5fec89e5-aa97-40d3-b5d3-efe825cfca85",
-        "55e5bc38-9116-4bd0-8e87-321e831c4606",
-        "7a3de2da-e04e-4b54-a2fd-8996959d5cc4",
-        "e2cac5fc-a81f-4743-945e-0e9898d0d557",
         "e0036eda-e4e7-4b68-abf6-0fbe8cf07fee",
         "2fac86b4-4641-43d3-98e9-4c578e5dd9ea",
-        "3d8e20a1-7d7a-4bd0-8059-f04388ac6589"
+        "632a9525-f619-4dca-82ee-da2590cbb06a"
     ],
     "filterType": "GMSprite",
     "folderName": "spr_player",
