@@ -4,9 +4,10 @@ if !place_meeting(x,y+1,obj_wall){
 	if vy>=12
 	{vy=12}
 	}
-
+if(PlayerLives >0)
+{
 //Jumping
-if keyboard_check_pressed(ord("C"))
+if keyboard_check_pressed(vk_up)
 {
 	if place_meeting(x,y+1,obj_wall)
 	{
@@ -72,7 +73,7 @@ if state == "MOVE"
 		image_index=0
 		state = "ATTACK";
 		shoot=instance_create_layer(x,y-32,"Instances",obj_shoot)
-		if(keyboard_check(vk_up))
+		if(keyboard_check(vk_down))
 		{
 			shoot.direction = 90;
 			shoot.speed=20*image_yscale;
@@ -148,7 +149,10 @@ if state == "SPEED"
 	sprite_index = spr_player_speed;
 }
 
+}
+
 if keyboard_check(ord("R"))
 	{
+		PlayerLives = 3;
 	room_restart()
 	}
