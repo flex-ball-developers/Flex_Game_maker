@@ -12,7 +12,7 @@ if(state == "IDLE")
 
 
 
-	if distance_to_object(obj_player_2) < 20
+	if distance_to_object(obj_player_2) < 5
 		{
 			//Bomber is colliding with enemy
 			//Bomber should explode
@@ -22,9 +22,14 @@ if(state == "IDLE")
 			sprite_index = spr_enemy_2;
 			state = "EXPLODE";
 			//Deal 25 damage
-			obj_player_2.PlayerHealth -= 25;
+			obj_player_2.PlayerLives -= 1;
 			//Instance should be destroyed after animation finishes
 			
 
 		}
 }
+
+if place_meeting(x,y,obj_shoot){
+	instance_destroy();
+	}
+	
